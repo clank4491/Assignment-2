@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <ul id="nav00">
+        <li id="nav01">
+            <a class="active" href="/">Home</a>
+        </li>
+        <li id="nav01">
+            <a href="addToList">Add to List</a>
+        </li>
+        <li id="nav01">
+            <a href="login">Login</a>
+        </li>
+    </ul>
+    <html>
+
+    <body>
+
+        <h2>Top 10 Games I like</h2>
+
+        <ol>
+            <li>Skyrim</li>
+            <li>OverWatch</li>
+            <li>Oblivin</li>
+            <li>Minecraft</li>
+            <li>Hearthstone</li>
+            <li>Halo 2 and 3</li>
+            <li>Rainbow six seige</li>
+            <li>Fortnite</li>
+            <li>Cod WW2</li>
+            <li>Battle block thearter</li>
+        </ol>
+</h2>
+
+
+        <% game.forEach(function(game){ %>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="text-muted pull-right">
+                        <%= game.published %>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <%= game.body %>
+                </div>
+            </div>
+            <% }) %>
+
+    </body>
+
+    </html>
